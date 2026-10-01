@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "azulene"
+version = "0.1.0"
+description = "Degree-based geometry and ARGB raster drawing primitives"
+requires-python = ">=3.10"
+dependencies = [
+    "numpy>=2.0",
+    "Pillow>=11.0",
+]
+
+[tool.setuptools.packages.find]
+include = ["azulene*"]
